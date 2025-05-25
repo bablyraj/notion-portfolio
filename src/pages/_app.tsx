@@ -54,6 +54,9 @@ export default function App({ Component, pageProps }: AppProps) {
           .notion-h2 {
             margin-top: 0rem !important;
           }
+          .notion-collection-card-property:not(:first-child) {
+            white-space: break-spaces !important;
+          }
         `,
           }}
         />
