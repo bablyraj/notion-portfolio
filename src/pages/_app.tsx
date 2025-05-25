@@ -48,6 +48,12 @@ export default function App({ Component, pageProps }: AppProps) {
             padding-left: 2px;
             padding-right: 2px;
           }
+          .notion-callout > .notion-page-icon-inline {
+            display: none;
+          }
+          .notion-h2 {
+            margin-top: 0rem !important;
+          }
         `,
           }}
         />
