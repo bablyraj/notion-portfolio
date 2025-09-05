@@ -29,6 +29,9 @@ export default function App({ Component, pageProps }: AppProps) {
           * {
             -webkit-tap-highlight-color: transparent;
             font-family: var(--font-inter);
+            --fg-color: rgba(255, 255, 255, 0.81);
+            --bg-color: rgba(255, 255, 255, 0.055);
+            --bg-color-0: rgba(47,47,47)
           }
           body {
             overscroll-behavior-y: none;
@@ -40,6 +43,8 @@ export default function App({ Component, pageProps }: AppProps) {
           }
           .notion-frame {
             padding-top: 0px !important;
+            background: rgb(25, 25, 25);
+            color: rgba(255, 255, 255, 0.81);
           }
           .notion-page-scroller {
             min-height: calc(100vh - 10px - var(--notion-header-height)) !important;
@@ -53,6 +58,12 @@ export default function App({ Component, pageProps }: AppProps) {
           }
           .notion-h2 {
             margin-top: 0rem !important;
+          }
+          .notion-collection-card {    
+            border-radius: 10px !important;
+            position: static;
+            height: 100%;
+            box-shadow: rgba(25, 25, 25, 0.4) 0px 4px 12px 0px, rgba(255, 255, 243, 0.082) 0px 0px 0px 1px !important;
           }
           .notion-collection-card-property:not(:first-child) {
             white-space: break-spaces !important;
